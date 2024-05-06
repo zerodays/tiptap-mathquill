@@ -1,9 +1,3 @@
 # Tiptap Mathquill
 
-A fresh Tiptap extension.
-
-## Installation
-
-```bash
-pnpm install tiptap-mathquill
-```
+🚧 A fresh Tiptap extension - come back in a few days.
