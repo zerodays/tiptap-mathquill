@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "ESNext",
+    "jsx": "react",
+    "lib": ["es2015", "dom"],
+    "moduleResolution": "node",
+    "declaration": true,
+    "noEmit": true,
+    "rootDir": "./",
+    "outDir": "./dist/",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [".eslintrc.js", "**/*.ts", "**/*.tsx", ".prettierrc.js"],
+  "exclude": ["node_modules"]
+}

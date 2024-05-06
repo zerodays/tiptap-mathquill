@@ -1,0 +1,39 @@
+module.exports = {
+  root: true,
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint", "node", "prettier"],
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: "module",
+  },
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:sonarjs/recommended",
+  ],
+  rules: {
+    "no-console": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "react/react-in-jsx-scope": "off",
+    "check-file/filename-naming-convention": [
+      "error",
+      {
+        "./src/**/*.{jsx,tsx}": "KEBAB_CASE",
+        "./src/**/*.{js,ts}": "KEBAB_CASE",
+      },
+      { ignoreMiddleExtensions: true },
+    ],
+    "react/jsx-no-literals": [
+      "error",
+      {
+        noStrings: true,
+        ignoreProps: true,
+      },
+    ],
+  },
+};

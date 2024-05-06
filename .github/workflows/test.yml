@@ -1,0 +1,18 @@
+name: "Test"
+on:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  coverage:
+    permissions:
+      checks: write
+      pull-requests: write
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          run_install: true
+      - name: Run tests
+        run: pnpm jest --reporters="summary" --reporters="github-actions"
