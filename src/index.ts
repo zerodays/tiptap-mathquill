@@ -1,10 +1,4 @@
-import { Extension } from "@tiptap/core";
-
-const TiptapMathquill = Extension.create({
-  name: "TiptapMathquill",
-
-  // TODO: make it work
-});
+import TiptapMathquill from './extension/extension';
 
 export { TiptapMathquill };
 
